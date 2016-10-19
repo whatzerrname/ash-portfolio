@@ -1,10 +1,3 @@
-@media screen and (max-width: 625px)
-{}
-@media screen and (max-width: 976px)
-{}
-
-
-
   /* Parallax base styles
   --------------------------------------------- */
 
@@ -72,7 +65,7 @@ body {
     font-size: 200%;
   }
 
-   /* center the content in the parallax layers */
+   /* centers the content in the parallax layers */
 .title {
     text-align: center;
     position: absolute;
@@ -104,7 +97,7 @@ h3 {
     z-index: 3; /* slide under groups 1 and 3 */
   }
   #group2 .parallax__layer--back {
-    background-image: url(https://pixabay.com/static/uploads/photo/2016/09/12/01/31/love-1662880_1280.jpg);
+    background-color: beige;
   }
 
   #group3 {
@@ -118,7 +111,7 @@ h3 {
     z-index: 2; /* slide under group 3 and 5 */
   }
   #group4 .parallax__layer--deep {
-    background-image: url(https://pixabay.com/static/uploads/photo/2016/08/23/23/11/scrabble-1615794_1280.jpg);
+    background-color: beige;
   }
 
   #group5 {
@@ -132,7 +125,7 @@ h3 {
     z-index: 2; /* slide under group 5 and 7 */
   }
   #group6 .parallax__layer--back {
-    background-image: url(https://pixabay.com/static/uploads/photo/2016/09/12/01/31/life-1662879_1280.jpg);
+    background-color: beige;
   }
 
   #group7 {
@@ -142,56 +135,8 @@ h3 {
     background: #dfd49e;
   }
 
-
-  /* misc
-  --------------------------------------------- */
-  .demo__info {
-    position: absolute;
-    z-index:100;
-    bottom: 1vh;
-    top: auto;
-    font-size:80%;
-    text-align:center;
-    width: 100%;
-  }
-
 /* Add Style to Elements
 --------------------------------------------- */
-
-.title {
-    color: white;
-    background-color: #36a28a;
-    width: 100%;
-    line-height: 50px;
-}
-
-h3 {
-    color: white;
-    background-color: #bfa440;
-    width: 100%;
-    line-height: 30px;
-}
-
-/* Images
---------------------------------------------- */
-.photoGroup {
-    padding: 40px;
-    clear: left;
-    float: left;
-    position: relative;
-    left: 50%;
-}
-
-#profilePhoto {
-    border-radius: 50%;
-    width: 5em;
-    height: 5em;
-    padding: 45px;
-    display: block;
-    float: left;
-    position: relative;
-    right: 70%;
-}
 
 header {
     text-align: center;
@@ -200,6 +145,22 @@ header {
     width: 100%;
     background-color: white;
     z-index: 1;
+}
+
+.title {
+    color: white;
+    background-color: #36a28a;
+    width: 100%;
+    line-height: 50px;
+}
+
+h1 {
+    color: white;
+    background-color: #36a28a;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -219,6 +180,13 @@ h2 {
     font-family: 'Shadows Into Light Two', cursive;
 }
 
+h3 {
+    color: white;
+    background-color: #bfa440;
+    width: 100%;
+    line-height: 30px;
+}
+
 ul {
   margin-left: 150px;
 }
@@ -232,6 +200,9 @@ li {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 20px;
 }
+
+/* Banners 100%
+--------------------------------------------- */
 
 #site1 {
     top: 45%;
@@ -253,6 +224,141 @@ li {
     top: 35%;
 }
 
+/* Banner Quotation
+--------------------------------------------- */
+
+.quote {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quote-content {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Qualities
+--------------------------------------------- */
+
+.qualityAll {
+    background-color: #bfa440;
+    color: white;
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 150px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Images
+--------------------------------------------- */
+.photoGroup {
+    padding: 40px;
+    clear: left;
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+#profilePhoto {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    padding: 45px;
+    display: block;
+    float: left;
+    position: relative;
+    right: 70%;
+    top: 30px;
+}
+
+.balloon1 {
+    float: right;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.balloon2 {
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.speechLeft {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url(speech-left1.png);
+    background-size: cover;
+    display: inline-block;
+    margin: 10%;
+    padding: 20px;
+}
+
+.speechRight {
+    float: right;
+    width: 150px;
+    height: 150px;
+    background-image: url(speech-right1.png);
+    background-size: cover;
+    display: inline-block;
+    margin: 20% 10%;
+    padding: 20px;
+}
+
+.speechLeft2 {
+    float: left;
+    width: 115px;
+    height: 115px;
+    background-image: url(speech-left2.png);
+    background-size: cover;
+    display: inline-block;
+    margin: 10%;
+    padding: 20px;
+}
+
+.lang-wrap {
+    margin: 160px 40px;
+    display: inline-block;
+    width: 70%;
+}
+
+.langAll {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+#lang1-html {background-image: url(HTML-badge.png);}
+
+#lang2-html {background-image: url(CSS-badge.png);}
+
+#lang3-html {background-image: url(JS-badge.png);}
+
+#lang4-html {background-image: url(PHP-badge.png);}
+
+#lang5-html {background-image: url(Ruby-badge.png);}
+
+#lang6-html {background-image: url(Java-badge.png);}
+
+/* Link Style
+--------------------------------------------- */
+
 a:unvisited {
     color:black;
 }
@@ -261,19 +367,60 @@ a:visited {
     color:black;
 }
 
+div.qualityAll:hover {
+    background-color: #36a28a;
+}
+
+/* Footer
+--------------------------------------------- */
+footer {
+    font-size: 12px;
+    text-align: right;
+    background-color: beige;
+}
+
 /* Media Screen
 --------------------------------------------- */
 
 @media screen and (max-width: 625px) {
-    nav {
-        display: none;
+    
+    nav {display: none;}
+    .photoGroup {display: none;}
+    #profilePhoto {display: none;}
+    .speechRight{width: 105px; height: 105px;}
+    
+    .lang-wrap {
+        position: absolute;
+        top: 160px;
+        width: 100%;
+        margin: 0;
+        display: table-column;
     }
     
-    .photoGroup {
-        display: none;
+    .langAll {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        float: left;
+        margin: 10px;
+        padding: 10px;
     }
     
-    #profilePhoto {
-        display: none;
+    .qualityAll {
+        font-size: 0.32em;
+        line-height: 60px;
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        margin: 4px;
+        padding: 14px;
     }
+}
+
+@media screen and (max-width: 700px) {
+    
+}
+
+@media screen and (max-width: 9000px) {
+    
 }
